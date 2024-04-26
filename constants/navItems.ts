@@ -1,18 +1,14 @@
 export const navItems = [
 	{
-		title: "Activity 1",
-		link: "/",
+		title: "Dog Facts",
+		link: "/dog-facts",
 	},
 	{
-		title: "Activity 2",
-		link: "/abc",
+		title: "Anime Chan",
+		link: "/anime-chan",
 	},
 	{
-		title: "Activity 3",
-		link: "/def",
-	},
-	{
-		title: "Activity 4",
-		link: "/ghi",
+		title: "Chuck Norris",
+		link: "/chuck-norris",
 	},
 ];

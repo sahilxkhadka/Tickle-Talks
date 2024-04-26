@@ -15,7 +15,7 @@ export default function Navbar() {
 					return (
 						<li key={navItem.title}>
 							<Link
-								href={"/"}
+								href={navItem.link}
 								className={cn(
 									"font-medium text-sm px-9 py-3.5 rounded-md",
 									isActive ? "bg-white shadow-sm" : "hover:bg-white"
