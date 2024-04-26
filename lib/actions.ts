@@ -6,6 +6,6 @@ export const getRandomDogImage = async () => {
 		const data: RandomDogImgResponse = await res.json();
 		return data.url;
 	} catch (err) {
-		notFound();
+		throw err;
 	}
 };
