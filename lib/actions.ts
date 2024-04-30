@@ -7,8 +7,7 @@ export const getRandomDogImage = async () => {
 		const data: RandomDogImgResponse = await res.json();
 		console.log(data.url);
 		if (data.url.includes(".mp4")) {
-			console.log("video aayo hai");
-			revalidatePath("/dog-facts");
+			return "https://random.dog/9d91b704-2a44-4587-97cf-d73b3311b0c6.jpg";
 		}
 		return data.url;
 	} catch (err) {

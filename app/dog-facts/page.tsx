@@ -21,7 +21,7 @@ export default async function DogFacts() {
 			<Image
 				src={imageUrl}
 				width={780}
-				height={640}
+				height={440}
 				alt='Dog image'
 				className='object-contain h-[440px] mx-auto'
 				placeholder={dataUrl as PlaceholderValue}
