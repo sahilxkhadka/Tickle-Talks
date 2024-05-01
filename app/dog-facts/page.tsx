@@ -1,6 +1,7 @@
 "use server";
 import DogFact from "@/components/dog-facts/dog-fact";
 import NextBtn from "@/components/dog-facts/next-btn";
+import getBase64 from "@/components/shared/get-base64";
 import { getRandomDogImage } from "@/lib/actions";
 import { dataUrl } from "@/lib/utils";
 import { revalidatePath } from "next/cache";
@@ -10,6 +11,7 @@ import Image from "next/image";
 export default async function DogFacts() {
 	const imageUrl = await getRandomDogImage();
 
+	const blurData = await getBase64(imageUrl);
 	const revalidate = () => {
 		"use server";
 		revalidatePath("/dog-facts");
@@ -25,7 +27,7 @@ export default async function DogFacts() {
 				height={440}
 				alt='Dog image'
 				className='object-contain h-[440px] mx-auto'
-				placeholder={dataUrl as PlaceholderValue}
+				placeholder={blurData as PlaceholderValue}
 			/>
 			<form action={revalidate} className='flex justify-center mt-6'>
 				<NextBtn />
