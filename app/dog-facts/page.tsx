@@ -1,4 +1,3 @@
-"use server";
 import DogFact from "@/components/dog-facts/dog-fact";
 import NextBtn from "@/components/dog-facts/next-btn";
 import getBase64 from "@/components/shared/get-base64";
@@ -8,11 +7,13 @@ import { revalidatePath } from "next/cache";
 import { PlaceholderValue } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
+export const dynamic = "force-dynamic";
+
 export default async function DogFacts() {
 	const imageUrl = await getRandomDogImage();
 
 	const blurData = await getBase64(imageUrl);
-	const revalidate = () => {
+	const revalidate = async () => {
 		"use server";
 		revalidatePath("/dog-facts");
 	};
