@@ -31,3 +31,17 @@ export const getRandomDogFact = async () => {
 export const revalidateDogFacts = () => {
 	revalidatePath("/dog-facts");
 };
+
+export const getAnimeQuote = async () => {
+	try {
+		const res = await fetch("https://animechan.xyz/api/random");
+		const data: AnimeQuoteResponse = await res.json();
+		console.log(data);
+		return data;
+	} catch (error) {
+		if (error instanceof Error) {
+			console.log(error.stack);
+		}
+		throw new Error("Failed to retrieve data");
+	}
+};
