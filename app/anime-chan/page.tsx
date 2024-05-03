@@ -1,4 +1,5 @@
-import NextBtn from "@/components/dog-facts/next-btn";
+import ChatBubble from "@/components/icons/chat-bubble";
+import NextBtn from "@/components/shared/next-btn";
 import { getAnimeQuote, revalidateAnimeChan } from "@/lib/actions";
 
 export default async function AnimeChan() {
@@ -18,7 +19,9 @@ export default async function AnimeChan() {
 				<p className='text-right text-lg font-medium mt-3'>- {character}</p>
 			</div>
 			<form action={revalidateAnimeChan} className='mt-8'>
-				<NextBtn />
+				<NextBtn text='Anime Chan'>
+					<ChatBubble />
+				</NextBtn>
 			</form>
 		</div>
 	);

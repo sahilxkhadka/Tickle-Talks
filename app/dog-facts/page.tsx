@@ -1,9 +1,10 @@
 import DogFact from "@/components/dog-facts/dog-fact";
-import NextBtn from "@/components/dog-facts/next-btn";
+import NextBtn from "@/components/shared/next-btn";
 import getBase64 from "@/components/shared/get-base64";
 import { getRandomDogImage, revalidateDogFacts } from "@/lib/actions";
 import { PlaceholderValue } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
+import Paw from "@/components/icons/paw";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +26,9 @@ export default async function DogFacts() {
 				placeholder={blurData as PlaceholderValue}
 			/>
 			<form action={revalidateDogFacts} className='flex justify-center mt-6'>
-				<NextBtn />
+				<NextBtn text="Next Paw-lease!">
+					<Paw />
+				</NextBtn>
 			</form>
 		</div>
 	);
