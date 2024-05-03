@@ -1,4 +1,5 @@
-import { getAnimeQuote } from "@/lib/actions";
+import NextBtn from "@/components/dog-facts/next-btn";
+import { getAnimeQuote, revalidateAnimeChan } from "@/lib/actions";
 
 export default async function AnimeChan() {
 	const animeQuote = await getAnimeQuote();
@@ -14,7 +15,11 @@ export default async function AnimeChan() {
 				<p className='text-2xl text-pretty font-extrabold italic bg-gradient-to-r from-blue-600 via-purple-400 to-green-500 text-transparent bg-clip-text'>
 					&#34;{quote}&#34;
 				</p>
+				<p className='text-right text-lg font-medium mt-3'>- {character}</p>
 			</div>
+			<form action={revalidateAnimeChan} className='mt-8'>
+				<NextBtn />
+			</form>
 		</div>
 	);
 }

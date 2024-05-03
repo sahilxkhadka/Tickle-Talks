@@ -28,8 +28,13 @@ export const getRandomDogFact = async () => {
 	}
 };
 
-export const revalidateDogFacts = () => {
+export const revalidateDogFacts = async () => {
+	"use server";
 	revalidatePath("/dog-facts");
+};
+export const revalidateAnimeChan = async () => {
+	"use server";
+	revalidatePath("/anime-chan");
 };
 
 export const getAnimeQuote = async () => {
