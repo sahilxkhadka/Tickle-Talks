@@ -13,3 +13,10 @@ type AnimeQuoteResponse = {
 	anime: string;
 	character: string;
 };
+
+type JokesResponse = {
+	icon_url: string;
+	id: string;
+	url: string;
+	value: string;
+};
