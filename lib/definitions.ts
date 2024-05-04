@@ -19,4 +19,5 @@ type JokesResponse = {
 	id: string;
 	url: string;
 	value: string;
+	updated_at: string;
 };

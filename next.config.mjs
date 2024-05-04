@@ -7,6 +7,10 @@ const nextConfig = {
 				hostname: "random.dog",
 				port: "",
 			},
+      {
+        protocol: 'https',
+        hostname: 'assets.chucknorris.host'
+      }
 		],
 	},
 };
