@@ -22,6 +22,9 @@ export default async function ChuckNurris() {
 					<p className='leading-none text-sm'>{timeSpan}</p>
 				</div>
 			</div>
+			<div className='my-4'>
+				<p>{data.value}</p>
+			</div>
 		</div>
 	);
 }
