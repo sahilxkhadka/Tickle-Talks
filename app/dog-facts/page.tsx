@@ -16,12 +16,6 @@ import DogImage from "@/components/dog-facts/dog-image";
 export const dynamic = "force-dynamic";
 
 export default async function DogFacts() {
-	const imageUrData = getRandomDogImage();
-	const dogFactData = getRandomDogFact();
-
-	const [imageUrl, dogFact] = await Promise.all([imageUrData, dogFactData]);
-
-	const blurData = await getBase64(imageUrl);
 	return (
 		<div>
 			<div className='mb-6'>
