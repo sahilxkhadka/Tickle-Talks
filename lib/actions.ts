@@ -37,6 +37,11 @@ export const revalidateAnimeChan = async () => {
 	revalidatePath("/anime-chan");
 };
 
+export const revalidateChuckNorris = async () => {
+	"use server";
+	revalidatePath("/chuck-norris");
+};
+
 export const getAnimeQuote = async () => {
 	try {
 		const res = await fetch("https://animechan.xyz/api/random");

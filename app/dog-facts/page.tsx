@@ -26,7 +26,7 @@ export default async function DogFacts() {
 				placeholder={blurData as PlaceholderValue}
 			/>
 			<form action={revalidateDogFacts} className='flex justify-center mt-6'>
-				<NextBtn text="Next Paw-lease!">
+				<NextBtn text='Next Paw-lease!'>
 					<Paw />
 				</NextBtn>
 			</form>
