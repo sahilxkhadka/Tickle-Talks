@@ -18,7 +18,7 @@ export const dynamic = "force-dynamic";
 export default async function DogFacts() {
 	return (
 		<div>
-			<div className='mb-6'>
+			<div className='mb-3 sm:mb-6'>
 				<DogFact />
 			</div>
 			<Suspense fallback={<DogImageLoader />}>

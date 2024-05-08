@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren & {
-	text: string;
+	text?: string;
 };
 export default function NextBtn({ text, children }: Props) {
 	return (

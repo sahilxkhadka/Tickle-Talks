@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
 	const pathname = usePathname();
 	return (
-		<nav className='max-w-4xl mx-auto py-6 mt-6 shadow-xl rounded-md sm:rounded-full bg-pink-200 px-10'>
+		<nav className='max-w-4xl mx-4 sm:mx-auto py-6 mt-6 shadow-xl rounded-md sm:rounded-full bg-pink-200 px-10'>
 			<ul className='flex justify-center gap-8 flex-wrap'>
 				{navItems.map((navItem) => {
 					const isActive = pathname === navItem.link;

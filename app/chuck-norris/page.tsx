@@ -35,9 +35,19 @@ export default async function ChuckNurris() {
 					<LikeBtn />
 				</div>
 			</div>
-			<form action={revalidateChuckNorris}>
-				<NextBtn text='Next Joke'>
+			<form action={revalidateChuckNorris} className='group'>
+				<NextBtn>
 					<CowBoy />
+					<div className=''>
+						<span className='translate-y-5 inline-block opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500'>
+							N
+						</span>
+						ex
+						<span className='-translate-y-5 inline-block opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500'>
+							T
+						</span>
+						&nbsp;Chuckle
+					</div>
 				</NextBtn>
 			</form>
 		</>

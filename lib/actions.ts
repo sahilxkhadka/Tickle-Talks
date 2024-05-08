@@ -6,7 +6,6 @@ export const getRandomDogImage = async () => {
 		const res = await fetch("https://random.dog/woof.json");
 		const data: RandomDogImgResponse = await res.json();
 		const imageUrl = data.url;
-		console.log(imageUrl);
 		if (imageUrl.includes(".mp4") || imageUrl.includes(".webp")) {
 			return "https://random.dog/9d91b704-2a44-4587-97cf-d73b3311b0c6.jpg";
 		}
@@ -20,7 +19,6 @@ export const getRandomDogFact = async () => {
 	try {
 		const res = await fetch("https://dog-api.kinduff.com/api/facts");
 		const data: RandomDogFactResponse = await res.json();
-		console.log(data.facts[0]);
 		return data.facts[0];
 	} catch (err) {
 		console.log(err);
