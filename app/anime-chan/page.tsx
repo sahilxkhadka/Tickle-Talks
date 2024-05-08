@@ -15,7 +15,7 @@ export default async function AnimeChan() {
 				<span className='sm:text-lg font-semibold'> {anime}</span>
 			</h2>
 			<div className='px-12 py-16 bg-white/50 backdrop-blur-md rounded-md shadow-quote my-8'>
-				<p className='text-xl sm:text-2xl text-pretty font-extrabold italic bg-gradient-to-r from-blue-600 via-purple-400 to-green-500 text-transparent bg-clip-text'>
+				<p className='text-xl sm:text-2xl text-pretty font-semibold sm:font-extrabold italic bg-gradient-to-r from-blue-600 via-purple-400 to-green-500 text-transparent bg-clip-text'>
 					&#34;{quote}&#34;
 				</p>
 				<p className='text-right sm:text-lg font-medium mt-3'>- {character}</p>

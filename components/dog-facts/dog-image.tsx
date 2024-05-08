@@ -12,7 +12,7 @@ export default async function DogImage() {
 			width={780}
 			height={440}
 			alt='Dog image'
-			className='object-contain h-[440px] mx-auto'
+			className='object-contain min-h-80 sm:h-[440px] mx-auto'
 			placeholder={blurData as PlaceholderValue}
 		/>
 	);
