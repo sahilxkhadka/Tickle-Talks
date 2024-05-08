@@ -4,7 +4,13 @@ import NextBtn from "@/components/shared/next-btn";
 import { revalidateChuckNorris } from "@/lib/actions";
 import { calcucateDateDifference } from "@/lib/utils";
 import chuckNorris from "@/public/images/chuck-norris.jpg";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+	title: "Chuck Norris",
+	description: "Random jokes by the popular Chuck Norris",
+};
 
 export default async function ChuckNurris() {
 	const res = await fetch("https://api.chucknorris.io/jokes/random");

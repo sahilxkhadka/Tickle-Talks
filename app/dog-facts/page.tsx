@@ -12,8 +12,14 @@ import Paw from "@/components/icons/paw";
 import { Suspense } from "react";
 import DogImageLoader from "@/components/loaders/dog-image";
 import DogImage from "@/components/dog-facts/dog-image";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+	title: "Dog facts",
+	description: "Random facts about dogs along with random dog images.",
+};
 
 export default async function DogFacts() {
 	return (

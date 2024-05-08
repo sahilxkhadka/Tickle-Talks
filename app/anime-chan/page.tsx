@@ -1,8 +1,14 @@
 import Naruto from "@/components/icons/naruto";
 import NextBtn from "@/components/shared/next-btn";
 import { getAnimeQuote, revalidateAnimeChan } from "@/lib/actions";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+	title: "Anime Chan",
+	description: "Random quotes for anime.",
+};
 
 export default async function AnimeChan() {
 	const animeQuote = await getAnimeQuote();
