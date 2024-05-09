@@ -1,5 +1,9 @@
 export const navItems = [
 	{
+		title: "Cat facts",
+		link: "/cat-facts",
+	},
+	{
 		title: "Dog Facts",
 		link: "/dog-facts",
 	},
