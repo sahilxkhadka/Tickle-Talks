@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
 	if (!request.nextUrl.pathname) {
-		return Response.redirect(new URL("/dog-facts", request.url));
+		return Response.redirect(new URL("/cat-facts", request.url));
 	}
 }
 
