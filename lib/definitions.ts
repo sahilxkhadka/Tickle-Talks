@@ -21,3 +21,7 @@ type JokesResponse = {
 	value: string;
 	updated_at: string;
 };
+
+type CatFactResponse = {
+	url: string;
+};

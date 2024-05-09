@@ -7,10 +7,14 @@ const nextConfig = {
 				hostname: "random.dog",
 				port: "",
 			},
-      {
-        protocol: 'https',
-        hostname: 'assets.chucknorris.host'
-      }
+			{
+				protocol: "https",
+				hostname: "assets.chucknorris.host",
+			},
+			{
+				protocol: "https",
+				hostname: "cdn2.thecatapi.com",
+			},
 		],
 	},
 };

@@ -1,12 +1,12 @@
 import Image from "next/image";
-import dogRunning from "@/public/images/dog-running.gif";
+import dogLoading from "@/public/images/dog-loading.jpg";
 
 export default function DogImageLoader() {
 	return (
 		<Image
 			unoptimized
 			alt='Running dog'
-			src={dogRunning}
+			src={dogLoading}
 			width={780}
 			height={440}
 			className='object-contain h-[440px] mx-auto'

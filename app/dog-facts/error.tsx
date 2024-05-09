@@ -1,5 +1,5 @@
 "use client"; // Error components must be Client Components
-import dogSwag from "@/public/images/dog-swag.png";
+import dogSwag from "@/public/images/dog-swag.jpg";
 import Image from "next/image";
 import { useEffect } from "react";
 
@@ -17,7 +17,12 @@ export default function Error({
 
 	return (
 		<div className='w-fit mx-auto'>
-			<Image src={dogSwag} alt='Swaggy dog' placeholder='blur' />
+			<Image
+				src={dogSwag}
+				alt='Swaggy dog'
+				placeholder='blur'
+				className='object-contain min-h-80 sm:h-[440px] mx-auto'
+			/>
 			<p className='my-6 text-center text-2xl font-semibold'>
 				BRB after the smoke break
 			</p>

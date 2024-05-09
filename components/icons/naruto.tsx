@@ -9,7 +9,7 @@ export default function Naruto() {
 			xmlnsXlink='http://www.w3.org/1999/xlink'
 			fill='currentColor'
 		>
-			<g id='SVGRepo_bgCarrier' stroke-width='0'></g>
+			<g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
 			<g
 				id='SVGRepo_tracerCarrier'
 				stroke-linecap='round'
@@ -21,7 +21,7 @@ export default function Naruto() {
 				<g
 					id='Page-1'
 					stroke='none'
-					stroke-width='1'
+					strokeWidth='1'
 					fill='none'
 					fill-rule='evenodd'
 				>
