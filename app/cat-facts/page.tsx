@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function CatFacts() {
-	const randomIndex = Math.ceil(Math.random() * 9);
+	const randomIndex = Math.ceil(Math.random() * 10);
 	const randomCatFact = catFacts[randomIndex];
 	return (
 		<div>
