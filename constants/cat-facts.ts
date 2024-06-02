@@ -10,4 +10,5 @@ export const catFacts = [
 	"If a cat is dying it will bring you its possessions and rub itself in every places they can so they can leave their scents behind, and then they hide so their humans wont feel sad when it dies",
 	"Cats are allergic to tulip",
 	"When you dont give food to your cat on time they think you would hunt for them",
+	"Eighty percent of cats are lactose intolerant after they grow out of their lactation phase",
 ];
